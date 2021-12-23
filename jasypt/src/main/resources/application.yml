@@ -1,0 +1,9 @@
+
+datasource:
+  password: ENC(Hic0Pt6CjALcBoiWKE2kvYsHlnkhjFVTgy52csepimQ22RdioHnYy+iAKye+fZ7Y) #需要加密的信息
+
+
+#配置加密密钥
+jasypt:
+  encryptor:
+    password: cxh-password
