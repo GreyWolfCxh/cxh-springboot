@@ -23,6 +23,7 @@
         <module>jps-redis-msg</module>
         <module>mongodb</module>
         <module>file-upload</module>
+        <module>file-upload-more</module>
     </modules>
 
 
