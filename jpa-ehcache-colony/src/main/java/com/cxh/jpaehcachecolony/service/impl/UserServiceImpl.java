@@ -29,13 +29,9 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User findByName(String name) {
-        System.out.println("CacheManager type : " + cacheManager.getClass());
         User u1 = userRepository.findByName(name);
         System.out.println("第一次查询：" + u1.getAge());
-
-        User u2 = userRepository.findByName(name);
-        System.out.println("第二次查询：" + u2.getAge());
-        return u2;
+        return u1;
     }
 
     @Override
