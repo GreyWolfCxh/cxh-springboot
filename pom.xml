@@ -20,6 +20,7 @@
 
     <modules>
         <module>jpa-redis</module>
+        <module>jps-redis-msg</module>
     </modules>
 
 
