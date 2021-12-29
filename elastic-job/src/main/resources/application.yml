@@ -3,9 +3,15 @@ elasticjob:
     server-lists: localhost:2181
     namespace: cxh
   jobs:
-    my-simple-job:
-      elastic-job-class: com.cxh.elasticjob.job.MySimpleJob
+    #单个
+#    my-simple-job:
+#      elastic-job-class: com.cxh.elasticjob.job.MySimpleJob
+#      cron: 0/5 * * * * ?
+#      sharding-total-count: 1
+    #分片
+    my-sharding-job:
+      elastic-job-class: com.cxh.elasticjob.job.MyShardingJob
       cron: 0/5 * * * * ?
-      sharding-total-count: 1
+      sharding-total-count: 3
 server:
   port: 8001
