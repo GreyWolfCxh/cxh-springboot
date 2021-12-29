@@ -1,0 +1,11 @@
+elasticjob:
+  reg-center:
+    server-lists: localhost:2181
+    namespace: cxh
+  jobs:
+    my-simple-job:
+      elastic-job-class: com.cxh.elasticjob.job.MySimpleJob
+      cron: 0/5 * * * * ?
+      sharding-total-count: 1
+server:
+  port: 8001
