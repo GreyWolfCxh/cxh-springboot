@@ -1,0 +1,10 @@
+spring:
+  task:
+    execution:
+      pool:
+        core-size: 2
+        max-size: 8
+        queue-capacity: 18
+        keep-alive: 60s
+        allow-core-thread-timeout: true
+      thread-name-prefix: task-
